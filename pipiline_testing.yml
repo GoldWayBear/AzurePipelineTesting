@@ -1,0 +1,23 @@
+Parameters:
+  - name: sb_min
+    type: object
+    default:
+      - name: topic1
+        type: object
+        default: 
+          - name : topic_name
+            value: t1
+          - name: sub_name
+            value: sub1
+      - name: topic2
+          - name : topic_name
+            value: t2
+          - name: sub_name
+            value: sub2
+
+stages:
+- stage: Test
+  jobs:
+  - job: TestOnWindows
+    steps:
+    - script: echo Testing on Windows!
