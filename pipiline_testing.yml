@@ -1,4 +1,4 @@
-Parameters:
+parameters:
   - name: sb_min
     type: object
     default:
@@ -10,6 +10,8 @@ Parameters:
           - name: sub_name
             value: sub1
       - name: topic2
+        type: object
+        default:
           - name : topic_name
             value: t2
           - name: sub_name
